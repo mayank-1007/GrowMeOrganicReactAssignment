@@ -1,0 +1,128 @@
+/* App.css */
+
+/* General styles for dark theme */
+body {
+  background-color: #121212; /* Dark background color */
+  color: #e0e0e0; /* Light text color */
+  font-family: Arial, sans-serif; /* Clean font */
+}
+
+/* Container styles */
+.p-d-flex {
+  background-color: #1e1e1e; /* Slightly lighter dark background */
+  color: #e0e0e0; /* Light text color */
+}
+
+/* Button styles */
+.p-button {
+  background-color: #333; /* Dark button background */
+  color: #e0e0e0; /* Light button text color */
+  border: none; /* Remove border */
+}
+
+.p-button.p-button-text {
+  color: #e0e0e0; /* Light text color for text buttons */
+}
+
+.p-button:hover {
+  background-color: #444; /* Slightly lighter button background on hover */
+}
+
+/* DataTable specific styles */
+.p-datatable {
+  background-color: #1e1e1e; /* Dark background for table */
+  color: #e0e0e0; /* Light text color */
+  border: 1px solid #333; /* Border color for table */
+}
+
+.p-datatable thead {
+  background-color: #333; /* Darker background for table header */
+}
+
+.p-datatable .p-column-header {
+  color: #e0e0e0; /* Light text color for column headers */
+}
+
+.p-datatable .p-datatable-tbody tr {
+  border-bottom: 1px solid #444; /* Lighter border for rows */
+}
+
+.p-datatable .p-datatable-tbody td {
+  color: #e0e0e0; /* Light text color for table cells */
+}
+
+.p-datatable .p-datatable-tbody tr:hover {
+  background-color: #333; /* Darker background on hover */
+}
+
+/* Paginator styles */
+.custom-paginator .p-paginator {
+  background-color: #1e1e1e; /* Dark background for paginator */
+  color: #e0e0e0; /* Light text color */
+}
+
+.custom-paginator .p-paginator-page.p-highlight {
+  border: 2px solid rgb(255, 255, 255); /* Add a black border */
+  border-radius: 4px; 
+  border-width: 3px;
+}
+
+.custom-paginator .p-paginator .p-button {
+  background-color: #333; /* Dark background for paginator buttons */
+  color: #e0e0e0; /* Light text color for paginator buttons */
+}
+
+.custom-paginator .p-paginator .p-button:hover {
+  background-color: #444; /* Slightly lighter background on hover */
+}
+
+/* OverlayPanel styles */
+.p-overlaypanel {
+  background-color: #1e1e1e; /* Dark background for overlay panel */
+  color: #e0e0e0; /* Light text color */
+  border: 1px solid #333; /* Border color for overlay panel */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Padding inside overlay panel */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.p-overlaypanel .p-input-text {
+  background-color: #ff0000; /* Dark background for input fields */
+  color: #000000; /* Light text color */
+  border: 1px solid #ff0000; /* Border color for input fields */
+}
+
+.p-overlaypanel .p-input-text:focus {
+  border-color: #ffffff; /* Focus border color for input fields */
+}
+
+.p-overlaypanel label {
+  color: #ff0000; /* Light text color for labels */
+}
+
+/* Custom checkbox styling */
+.p-checkbox-box {
+  border-color: #666; /* Border color for checkboxes */
+  background-color: #333; /* Background color for checkboxes */
+}
+
+.p-checkbox-box.p-highlight {
+  background-color: #666; /* Background color for selected checkboxes */
+}
+
+.p-checkbox-box .p-checkbox-icon {
+  color: #e0e0e0; /* Checkmark color */
+}
+
+/* Custom arrow styling */
+.p-column-header .pi-chevron-down {
+  color: #e0e0e0; /* Arrow color */
+}
+
+/* Remove default checkbox arrow */
+.p-checkbox-box .p-checkbox-icon::after {
+  display: none; /* Hide default checkbox arrow */
+}
+
+
+
