@@ -65,11 +65,11 @@ function App() {
   };
 
   const onSelectionChange = (e: any) => {
-    const selectedTitles = new Set(e.value.map((product: Product) => product.title || ''));
+    const selectedTitles: Set<string> = new Set(e.value.map((product: Product) => product.title || ''));
 
     setSelectedProductTitles(prevSelectedTitles => {
       const updatedSelected = new Set(prevSelectedTitles);
-      selectedTitles.forEach(title => updatedSelected.add(title));
+      (selectedTitles as Set<string>).forEach(title => updatedSelected.add(title));
       return updatedSelected;
     });
   };
@@ -107,7 +107,7 @@ function App() {
             minWidth: '50rem',
             borderCollapse: 'collapse', // Ensure table borders are collapsed
           }}
-          headerStyle={{ border: '1px solid black' }} // Borders for header
+          // headerStyle={{ border: '1px solid black' }} // Borders for header
           className="custom-table"
           onRowSelect={({ data }) => {
             setSelectedProductTitles(prev => {
