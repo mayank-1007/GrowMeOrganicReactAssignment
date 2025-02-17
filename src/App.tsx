@@ -171,7 +171,7 @@ function App() {
         style={{ backgroundColor: '#1e1e1e', color: '#e0e0e0' }}
         className="mt-3 custom-paginator"
       />
-      <img src="icon.png" alt="gg" />
+      <img src="public/icon.png" alt="gg" className="h-full w-full" />
     </PrimeReactProvider>
   );
 }
